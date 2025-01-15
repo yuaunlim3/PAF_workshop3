@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <header>Order Details</header>
+
+    <main>
+        <table>
+            <tr>
+                <td>Customer id:</td>
+                <td data-th-text="${order.customer_id}"></td>
+            </tr>
+            <tr>
+                <td>Order id:</td>
+                <td data-th-text="${order.order_id}"></td>
+            </tr>
+            <tr>
+                <td>Order Date:</td>
+                <td data-th-text="${order.order_date}"></td>
+            </tr>
+            <tr>
+                <td>Total price:</td>
+                <td data-th-text="${order.total_price}"></td>
+            </tr>
+            <tr>
+                <td>Discounted Price:</td>
+                <td data-th-text="${order.discounted_price}"></td>
+            </tr>
+            <tr>
+                <td>Cost Price:</td>
+                <td data-th-text="${order.cost_price}"></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
